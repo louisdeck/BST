@@ -91,11 +91,9 @@ tree deleteNode(int v, tree a)
 			if(p == prec->fg)
 				prec->fg = theSon;
 
-			else
-				prec->fd = theSon;
+			else prec->fd = theSon;
 		}
-		else 
-			a = theSon;
+		else a = theSon;
 
 		free(p);
 	}
