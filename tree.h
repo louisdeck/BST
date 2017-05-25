@@ -9,11 +9,10 @@ struct node
 	tree fg, fd;
 };
 
+tree treeGeneration(int n);
 void printTree(tree a);
 tree createNode(int v, tree fg, tree fd);
 int research(int v, tree a);
 tree insertNode(int v, tree a);
 tree deleteNode(int v,tree a);
-tree treeGeneration(int n);
-
 #endif
