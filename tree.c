@@ -19,7 +19,6 @@ void printTree(tree a)
 	else printf("*");
 }
 
-
 tree createNode(int v, tree fg, tree fd)
 {
 	tree a;
@@ -32,7 +31,6 @@ tree createNode(int v, tree fg, tree fd)
 
 	return a;
 }
-
 
 int research(int v, tree a)
 {
@@ -48,7 +46,6 @@ int research(int v, tree a)
 	else return research(v,a->fd);
 }
 
-
 tree insertNode(int v, tree a)
 {
 	if(a == NULL)
@@ -62,7 +59,6 @@ tree insertNode(int v, tree a)
 
 	return a;
 }
-
 
 tree deleteNode(int v, tree a)
 {
@@ -121,7 +117,6 @@ tree deleteNode(int v, tree a)
 	return a;
 } 
 
-
 tree treeGeneration(int n)
 {
 	tree a = NULL;
@@ -147,7 +142,6 @@ tree treeGeneration(int n)
 
 	return a;
 }
-
 
 void main()
 {
