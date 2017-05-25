@@ -7,5 +7,6 @@ Binary search tree implementation in C
 - Print tree in console
 - Node creation
 - Research a certain node value
+- Node insertion
 - Delete a node
 
