@@ -64,7 +64,7 @@ tree deleteNode(int v, tree a)
 {
 	tree p = a, prec = NULL;
 
-	while((p!=NULL) && (p->val != v))
+	while((p != NULL) && (p->val != v))
 	{
 		prec = p;
 
@@ -90,13 +90,11 @@ tree deleteNode(int v, tree a)
 			else prec->fd = theSon;
 		}
 		else a = theSon;
-
 		free(p);
 	}
 
 	else //node has 2 sons
 	{
-
 		tree q = p->fg, prec2 = p;
 
 		while(q->fd != NULL)
@@ -139,7 +137,6 @@ tree treeGeneration(int n)
 			a = insertNode(t[j], a); 
 	}
 	free(t);
-
 	return a;
 }
 
